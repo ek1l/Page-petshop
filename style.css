@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+
+
+/* HEADER */
+
+nav {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: wheat;
+    transition: 0.3s;
+    
+}
+
+.botaohome {
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 245, 122);
+    border-radius: 50px;
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+
+ /* MAIN */ 
+
+ .container-main {
+    
+    width:100%;
+    height: 100vh;
+ }
+.banner img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    max-height: 700px;
+    width: 100%;
+}
+
+
+.bem-vindo {
+    display: flex;
+    position: relative;
+    top: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.bem-vindo p {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.bem-vindo h1{
+    font-size: 50px;
+    
+}
+.btnwpp  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+
+
+.btnwpp input {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: lightgoldenrodyellow;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnwpp input:hover {
+    background-color: rgb(245, 237, 166);
+    transition: 0.3s;
+}
+
+.wppicon {
+    padding-right: 10px;
+}
+
+
+/* SECTION */
+
+.section1{
+    padding-bottom: 120px;
+}
+.container-section {
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 1230px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mover-tudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-sobre {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    padding-left: 30px;
+
+}
+
+.texto-sobre h1 {
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.texto-sobre h1:hover {
+   color: #ffff1f;
+   transition: 0.4s;
+}
+
+.texto-sobre p {
+    line-height: 25px;
+}
+
+
+.borda {
+    padding-top: 10px;
+    border-bottom: 3px solid lightgoldenrodyellow;
+}
+
+
+ /* SECTION2 */
+
+ .section2 {
+    padding-bottom: 100px;
+ }
+
+.imagens-galeria {
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.imagens-galeria .imgdog {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imagens-galeria .imgdog:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+/* SECTION 3 */
+
+.section3 {
+    padding-bottom: 160px;
+}
+
+.mover-tudo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-section3 {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 1230px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-contato {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    padding-left: 30px;
+}
+
+.texto-contato h1 {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 20px;
+    
+}
+
+.texto-contato h1:hover {
+    color: #ffff1f;
+    transition: 0.4s;
+}
+
+.texto-contato a {
+    color: blue;
+}
+.texto-contato a:hover{
+    transition: 0.3s;
+    color: rgb(0, 0, 82);
+}
+
+.texto-contato p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.borda3 {
+    margin-bottom: 30px;
+    border-bottom: 3px solid lightgoldenrodyellow;
+    width: 445px;
+}
+
+.borda4 {
+    border-bottom: 3px solid lightgoldenrodyellow;
+    width: 445px;
+}
+
+
+/* footer */ 
+
+footer {
+
+}
+
+
+.container-footer {
+    height: 350px;
+    background-color: #fafad2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.primeiracoluna {
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.primeiracoluna p {
+    line-height: 25px;
+    width: 200px;
+}
+
+
+.ulli-footer li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding: 5px;
+}
+
+.ulli-footer li a {
+    font-weight: bold;
+ color: black;
+}
+
+.ulli-footer li a:hover {
+    color: wheat;
+    transition: 0.3s;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insta a{
+    color: black;
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.insta a:hover {
+    color: wheat;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
