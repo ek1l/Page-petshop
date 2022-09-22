@@ -7,6 +7,26 @@
 
 }
 
+/* BARRA DE ROLAGEM */ 
+
+
+body::-webkit-scrollbar {
+    width: 10px;    
+}
+
+
+body::-webkit-scrollbar-track {
+    background: white; 
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 20px; 
+    border: 3px solid black;
+}
+
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 200px;
@@ -162,7 +182,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 .texto-sobre h1:hover {
-   color: #ffff1f;
+   color: gray;
    transition: 0.4s;
 }
 
@@ -179,9 +199,25 @@ nav ul li a:hover {
 
  /* SECTION2 */
 
+
+
+
  .section2 {
     padding-bottom: 100px;
  }
+
+
+.galeria  {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.galeria h1 {
+     font-weight: bold;
+     font-size: 100px;
+     padding-bottom: 50px;
+}
 
 .imagens-galeria {
     display: flex;
@@ -205,6 +241,7 @@ nav ul li a:hover {
   transition: 0.3s;
   opacity: 0.7;
 }
+
 
 /* SECTION 3 */
 
@@ -244,7 +281,7 @@ nav ul li a:hover {
 }
 
 .texto-contato h1:hover {
-    color: #ffff1f;
+    color: gray;
     transition: 0.4s;
 }
 
@@ -274,17 +311,335 @@ nav ul li a:hover {
 }
 
 
-/* footer */ 
 
-footer {
+
+/* SECTION 4 */ 
+
+
+.container-section4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 130px;
+}
+
+.servicos  h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    font-size: 100px;
+    font-weight: bold;
 
 }
+
+
+/* BANHO E TOSA SERVIÇOS */
+
+.banho-tosa {
+    height: 100%;
+    max-height: 520px;
+    width: 100%;
+    max-width: 290px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banho-tosa img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 20px;
+    max-width: 290px;
+    width: 100%;
+}
+
+.especificacoes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.especificacoes h1 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.especificacoes p {
+   line-height: 21px;
+   font-size: 16px;
+}
+
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 31.3px;
+}
+
+.btn a{
+cursor: pointer;
+padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+ max-width: 290px;
+ width: 100%;
+}
+
+
+
+.btn  a:hover{
+    color: gray;
+}
+
+
+/* ESCOVAÇÃO E DESEMBARAÇAMENTO */ 
+
+
+.escovacao-e-desembaracamento {
+    height: 100%;
+    max-height: 520px;
+    width: 100%;
+    max-width: 290px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.escovacao-e-desembaracamento img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 20px;
+    max-width: 290px;
+    width: 100%;
+}
+
+.especificacoes2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.especificacoes2 h1 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.especificacoes2 p {
+   line-height: 21px;
+   font-size: 16px;
+}
+
+.btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 31.3px;
+}
+
+
+
+.btn2 a{
+cursor: pointer;
+padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+ max-width: 290px;
+ width: 100%;
+}
+
+
+.btn2  a:hover{
+    color: gray;
+}
+
+
+
+/* LIMPEZA DE OUVIDO E DENTES */
+
+.limpeza-de-ouvidos-e-dentes {
+    height: 100%;
+    max-height: 520px;
+    width: 100%;
+    max-width: 290px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.limpeza-de-ouvidos-e-dentes img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 20px;
+    max-width: 290px;
+    width: 100%;
+}
+
+.especificacoes3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.especificacoes3 h1 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.especificacoes3 p {
+   line-height: 21px;
+   font-size: 16px;
+}
+
+.btn3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 31.3px;
+}
+
+.btn3 a{
+cursor: pointer;
+padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+ max-width: 290px;
+ width: 100%;
+}
+
+.btn3  a:hover{
+    color: gray;
+}
+
+
+/* CORTE DE UNHA */ 
+
+.corte-de-unha {
+    height: 100%;
+    max-height: 520px;
+    width: 100%;
+    max-width: 290px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.corte-de-unha img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 20px;
+    max-width: 290px;
+    width: 100%;
+}
+
+.especificacoes4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.especificacoes4 h1 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.especificacoes4 p {
+   line-height: 21px;
+   font-size: 16px;
+}
+
+.btn4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 31.3px;
+}
+
+.btn4 a{
+cursor: pointer;
+padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+ max-width: 290px;
+ width: 100%;
+}
+
+.btn4  a:hover{
+    color: gray;
+}
+
+
+/* footer */ 
+
+
 
 
 .container-footer {
     height: 350px;
     background-color: #fafad2;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -296,6 +651,7 @@ footer {
     color: black;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
@@ -308,6 +664,7 @@ footer {
 .ulli-footer li {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
    padding: 5px;
 }
@@ -324,7 +681,12 @@ footer {
 
 .redes-sociais {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     align-items: center;
 }
 
@@ -333,6 +695,7 @@ footer {
     margin-top: 20px;
     gap: 10px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -340,6 +703,7 @@ footer {
     color: wheat;
     transition: 0.3s;
 }
+
 
 
 
