@@ -1,0 +1,46 @@
+
+@import url(/./style.css);
+
+
+    .semresolucao h3{
+        display: none;
+        color: black;
+        position:absolute;
+        top: 310px;
+        left: 20px;
+        display: block;
+       
+    }
+
+
+
+@media screen and (max-width:280px) {    
+    main,section,footer,header {
+        display: none;
+        
+    }
+
+
+
+    body {
+        position: relative;
+        background: #CAC531; 
+        font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+        font-size: 11px;
+
+        
+
+    
+    }
+
+
+}
+
+@media screen and (max-width:977px) {
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
