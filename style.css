@@ -52,7 +52,6 @@ header {
     z-index: 2;
     width: 100%;
     background: rgba(255, 255, 255, 0.12);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.8px);
     -webkit-backdrop-filter: blur(8.8px);
@@ -62,6 +61,7 @@ header {
 nav {
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -87,10 +87,11 @@ nav ul li a:hover {
     transition: 0.3s;
     
 }
-
-
-
  /* MAIN */ 
+
+main {
+    width: 100%;
+}
 
  .container-main {
     position: relative;
@@ -106,6 +107,7 @@ nav ul li a:hover {
     height: 100%;
     max-height: 800px;
     width: 100%;
+    object-fit: cover;
 }
 
 
@@ -175,6 +177,7 @@ nav ul li a:hover {
     max-width: 1200px;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -190,6 +193,11 @@ nav ul li a:hover {
     flex-direction: column;
     width: 570px;
     padding-left: 30px;
+
+}
+
+.imagemdolado img{
+    width: 100%;
 
 }
 
@@ -226,7 +234,12 @@ nav ul li a:hover {
     padding-bottom: 100px;
  }
 
-
+.container-section2 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
 .galeria  {
  display: flex;
  justify-content: center;
@@ -235,13 +248,15 @@ nav ul li a:hover {
 }
 .galeria h1 {
      font-weight: bold;
-     font-size: 100px;
+     font-size: 50px;
+     width: 100%;
+     text-align: center;
      padding-bottom: 50px;
 }
 
 .imagens-galeria {
     display: flex;
-    gap: 1%;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -249,6 +264,7 @@ nav ul li a:hover {
 }
 
 .imagens-galeria .imgdog {
+    gap: 20px;
     border: 2px solid black;
     border-radius: 50%;
     background-size: cover;
@@ -281,6 +297,7 @@ nav ul li a:hover {
     width: 100%;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -288,6 +305,7 @@ nav ul li a:hover {
 .texto-contato {
     color: black;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 570px;
     padding-left: 30px;
@@ -296,8 +314,11 @@ nav ul li a:hover {
 .texto-contato h1 {
     cursor: default;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -317,18 +338,29 @@ nav ul li a:hover {
 .texto-contato p {
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     line-height: 30px;
+    width: 100%;
 
 }
 
 .borda3 {
     margin-bottom: 30px;
     border-bottom: 3px solid lightgoldenrodyellow;
-    width: 445px;
+    width: 90%
 }
 
 .borda4 {
     border-bottom: 3px solid lightgoldenrodyellow;
-    width: 445px;
+    width: 90%
+}
+
+.imagemdolado3 {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.imagemdolado3 img {
+    width: 100%;
 }
 
 
@@ -340,17 +372,18 @@ nav ul li a:hover {
 .container-section4 {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 130px;
 }
 
 .servicos  h1{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-    font-size: 100px;
     font-weight: bold;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
 
 }
 
