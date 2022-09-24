@@ -161,7 +161,7 @@ main {
 }
 
 .wppiconn:hover {
-    color: rgb(255, 166, 0);
+    color: rgb(41, 41, 41);
     filter: brightness(.9);
     border: 2px solid black;
     transition: 0.4s;

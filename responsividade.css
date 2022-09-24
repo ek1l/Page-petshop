@@ -76,9 +76,10 @@
         font-size: 3rem;
         border: none;
         background: none;
-        color: black;
-        
+        color: black !important; 
+    
     }
+
     #menu {
         display: none;
         position: absolute;
@@ -93,7 +94,7 @@
         visibility: hidden;
         background-color: transparent ;
         opacity: 0.9;
-       
+       text-align: center;
         background: rgba(255, 255, 255, 0.27);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.3px);
