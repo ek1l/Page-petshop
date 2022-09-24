@@ -1,6 +1,19 @@
 
 @import url(/./style.css);
+     
 
+nav button {
+     background-color: transparent;
+     border: none;
+     color: white;
+     font-size: 35px;
+     cursor: pointer;
+     position: absolute;
+     right: 10px;
+     top: 10px;
+     display: none;
+
+}
 
     .semresolucao h3{
         display: none;
@@ -14,12 +27,12 @@
 
 
 
+
 @media screen and (max-width:280px) {    
     main,section,footer,header {
         display: none;
         
     }
-
 
 
     body {
@@ -42,5 +55,47 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 600px;
+
+    }
+
+}
+
+
+
+
+
+/* @media (max-width: 700px) {
+    nav,ul {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+
+    nav,ul img {
+        text-align: center;
+    }
+
+
+    ul {
+        text-align: center;
+        overflow: hidden;
+    }
+
+
+    
+    nav {
+        padding: 10px;
+
+    }
+
+    nav button {
+        display: flex;
     }
 }
+
+
+nav button:focus ~ ul {
+    height: 260px;
+    
+} */
