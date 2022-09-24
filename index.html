@@ -23,9 +23,13 @@
 </div> 
 
     <header class="header1"> 
-   <nav class="itens">
+   <nav id="nav" class="itens">
+    <button id="btnmobile">&equiv;
+
+        <span id="hamburguer"></span>
+    </button>
     <a href="#"><img src="./img/Logo.png" alt="" width="150" ></a>
-    <ul>
+    <ul id="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
@@ -202,5 +206,14 @@
             
         </div>
     </footer>
+
+    <script>
+        const btnMobile = document.getElementById('btnmobile')
+        function toggleMenu () {
+            const nav = document.getElementById('nav')
+            nav.classList.toggle('active')
+        }
+        btnMobile.addEventListener('click', toggleMenu)
+    </script>
 </body>
 </html>

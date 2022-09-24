@@ -2,19 +2,6 @@
 @import url(/./style.css);
      
 
-nav button {
-     background-color: transparent;
-     border: none;
-     color: white;
-     font-size: 35px;
-     cursor: pointer;
-     position: absolute;
-     right: 10px;
-     top: 10px;
-     display: none;
-
-}
-
     .semresolucao h3{
         display: none;
         color: black;
@@ -62,40 +49,62 @@ nav button {
 }
 
 
-
-
-
-/* @media (max-width: 700px) {
-    nav,ul {
-        flex-direction: column;
-        align-items: unset;
-    }
-
-
-    nav,ul img {
-        text-align: center;
-    }
-
-
-    ul {
-        text-align: center;
-        overflow: hidden;
-    }
-
-
-    
-    nav {
-        padding: 10px;
-
-    }
-
-    nav button {
-        display: flex;
+@media (min-width: 601px) {
+    #btnmobile {
+        display: none;
     }
 }
 
 
-nav button:focus ~ ul {
-    height: 260px;
+
+
+
+@media (max-width: 600px) {
+    #btnmobile {
+        display: block;
+        padding: .5rem 1rem;
+        font-size: 3rem;
+        border: none;
+        background: none;
+        
+    }
+    #menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 111px;
+        right: 0px;
+        display: block;
+        z-index: 1000;
+        height: 0;
+        transition: .6s;
+        overflow-y: hidden;
+        visibility: hidden;
+        background-color: transparent ;
+        opacity: 0.9;
+        background: rgba(255, 255, 255, 0.27);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(255, 255, 255, 0.46);
+             
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 70px);
+        display: block;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom:2px black;
+    }
+
+    }
+
     
-} */
+
+    
