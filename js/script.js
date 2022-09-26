@@ -1,3 +1,6 @@
+
+ /* BOTAO RESPONSIVO MENU HAMBURGUER */
+
 const btnMobile = document.getElementById('btnmobile')
         function toggleMenu () {
             const nav = document.getElementById('nav')
