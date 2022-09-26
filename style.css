@@ -798,3 +798,18 @@ footer {
 
 
 
+/* FIM */
+
+ 
+
+.direitos {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+
+}
+
+.direitos a {
+    color: blue;
+    
+}
